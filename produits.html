@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Services et profils professionnels présentés par Match Up.">
+  <title>Match Up | Services</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- En-tête et menu principal -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Match Up - Accueil">
+        <span class="brand-mark">M</span>
+        <span class="brand-text">Match <strong>Up</strong></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+        <a href="index.html">accueil</a>
+        <a href="produits.html">Services</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">connexion</a>
+        <a href="compte.html">mon compte</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">SERVICES / PROFILS</p>
+        <h1>Des profils présentés selon les domaines</h1>
+        <p>Explorez les trois profils fournis dans le projet Match Up.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Filtre simple en JavaScript -->
+        <div class="filter-bar" aria-label="Filtrer les services">
+          <button class="filter-btn active" data-filter="all">Tous</button>
+          <button class="filter-btn" data-filter="informatique">Informatique</button>
+          <button class="filter-btn" data-filter="economie">Économie</button>
+        </div>
+
+        <div class="service-grid service-grid-large" id="serviceGrid">
+          <article class="service-card filter-item" data-category="informatique">
+            <div class="service-image image-one">
+              <img src="images/download (4).jpeg" alt="Illustration liée au profil ingénieure en e-commerce">
+            </div>
+            <div class="service-content">
+              <span class="tag">Informatique</span>
+              <h2>Ingénieure en e-commerce</h2>
+              <p>Profil professionnel dans l'informatique, avec une orientation vers l'e-commerce.</p>
+              <a class="btn btn-small btn-primary" href="produit-vedette.html">Découvrir</a>
+            </div>
+          </article>
+
+          <article class="service-card filter-item" data-category="economie">
+            <div class="service-image image-two">
+              <img src="images/download (2).jpeg" alt="Illustration liée au profil Bank Account Manager">
+            </div>
+            <div class="service-content">
+              <span class="tag">Économie</span>
+              <h2>Bank Account Manager</h2>
+              <p>Profil professionnel associé à l'économie et à la gestion des comptes bancaires.</p>
+              <span class="info-note">Les conditions commerciales sont disponibles à partir de 5 DT/mois.</span>
+            </div>
+          </article>
+
+          <article class="service-card filter-item" data-category="informatique">
+            <div class="service-image image-three">
+              <img src="images/download.jpeg" alt="Illustration liée au profil Junior Database Administrator">
+            </div>
+            <div class="service-content">
+              <span class="tag">Informatique</span>
+              <h2>Junior Database Administrator</h2>
+              <p>Profil junior dans l'informatique, centré sur l'administration des bases de données.</p>
+              <span class="info-note">Les conditions commerciales sont disponibles à partir de 5 DT/mois.</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="notice-box">
+          <strong>Abonnement :</strong> 5 DT/mois selon les conditions commerciales fournies pour le projet. Les détails des offres d'emploi restent à préciser.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html"><span class="brand-mark">M</span><span class="brand-text">Match <strong>Up</strong></span></a>
+        <p>Plateforme de mise en relation professionnelle en Tunisie.</p>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p><a href="tel:+21655996677">55 996 677</a></p>
+        <p><a href="mailto:career%20conncet@gmail.com">career conncet@gmail.com</a></p>
+        <p>ISG Sousse</p>
+        <p>24h/7j</p>
+        <p>WhatsApp : <a href="https://wa.me/21655996677" target="_blank" rel="noopener">55 996 677</a></p>
+        <p>Réseaux sociaux : téléphone et social media</p>
+      </div>
+    </div>
+    <div class="footer-bottom">© <span id="currentYear"></span> Match Up. Tous droits réservés.</div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Retour en haut">↑</button>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="supabase-client.js"></script>
+  <script src="services.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

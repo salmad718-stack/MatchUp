@@ -1,0 +1,197 @@
+MATCH UP — GUIDE POUR DEBUTANT COMPLET
+
+1. TELECHARGER LE PROJET
+
+Vous pouvez utiliser le fichier MatchUp-site.zip fourni avec ce projet.
+Décompressez-le dans un endroit facile à retrouver, par exemple le Bureau.
+
+Le dossier doit s'appeler : MatchUp
+
+2. AJOUTER VOS IMAGES
+
+Votre dossier d'images se trouve sur votre ordinateur ici :
+C:\Users\PC de dridi\Downloads\Match Up
+
+Copiez les 6 fichiers image dans le dossier :
+MatchUp\images\
+
+Gardez exactement ces noms :
+- download (4).jpeg
+- wallpaper.jpeg
+- wallpaper.jpeg2
+- download (2).jpeg
+- download (1).jpeg
+- download.jpeg
+
+Attention : ne renommez pas ces fichiers.
+
+Le logo fourni dans C:\Users\PC de dridi\Downloads\Capture d'écran 2026-10-07 184958.jpg
+n'est pas intégré automatiquement, car ce fichier n'était pas accessible depuis l'environnement de création.
+La page utilise actuellement un logo texte « Match Up » cohérent avec le style bleu/blanc.
+
+3. OUVRIR LE PROJET DANS VS CODE OU CURSOR
+
+1) Ouvrez VS Code ou Cursor.
+2) Cliquez sur « File » puis « Open Folder » (ou « Ouvrir un dossier »).
+3) Sélectionnez le dossier MatchUp.
+4) Cliquez sur « Select Folder » / « Sélectionner le dossier ».
+5) Dans la colonne de gauche, vous devez voir :
+   index.html
+   produits.html
+   produit-vedette.html
+   a-propos.html
+   contact.html
+   style.css
+   script.js
+   images
+
+Rôle des fichiers :
+- index.html : page d'accueil
+- produits.html : liste des services/profils
+- produit-vedette.html : détail du profil vedette
+- a-propos.html : présentation et BMC
+- contact.html : contact + formulaire visuel
+- style.css : apparence et mise en page
+- script.js : interactions simples
+- images/ : vos images
+
+4. OUVRIR LE TERMINAL
+
+Dans VS Code ou Cursor :
+Terminal -> New Terminal
+ou
+Terminal -> Nouveau terminal
+
+Raccourci Windows : Ctrl + `
+(la touche ` est généralement sous Echap/Esc)
+
+Le terminal doit normalement être ouvert dans le dossier MatchUp.
+
+Pour vérifier sous Windows, tapez :
+
+dir
+
+Puis appuyez sur Entrée.
+
+Vous devez voir les fichiers du projet, notamment index.html et style.css.
+
+5. LANCER LE SITE AVEC PYTHON
+
+Dans le terminal, tapez :
+
+python --version
+
+puis appuyez sur Entrée.
+
+Si cela ne fonctionne pas, essayez :
+
+python3 --version
+
+Si un numéro de version apparaît, Python est installé.
+
+Ensuite, tapez :
+
+python -m http.server 8000
+
+Si cette commande ne fonctionne pas et que python3 fonctionne, tapez :
+
+python3 -m http.server 8000
+
+Explication simple : cette commande crée un petit serveur local pour afficher votre site.
+
+6. OUVRIR LE SITE DANS LE NAVIGATEUR
+
+Gardez le terminal ouvert.
+
+Ouvrez Chrome, Edge ou Firefox.
+
+Dans la barre d'adresse, écrivez :
+
+http://localhost:8000
+
+Puis appuyez sur Entrée.
+
+La page Match Up doit s'afficher.
+
+7. ARRETER LE SERVEUR
+
+Retournez dans le terminal et appuyez sur :
+
+Ctrl + C
+
+Le serveur s'arrête.
+
+8. METHODE PLUS SIMPLE AVEC LIVE SERVER
+
+Dans VS Code :
+1) Ouvrez index.html.
+2) Installez l'extension « Live Server » si elle n'est pas déjà installée.
+3) Faites un clic droit sur index.html.
+4) Cliquez sur « Open with Live Server ».
+5) Le navigateur s'ouvre normalement automatiquement.
+
+L'adresse ressemble souvent à :
+http://127.0.0.1:5500/
+
+9. OUVERTURE DIRECTE SANS TERMINAL
+
+Vous pouvez aussi aller dans le dossier MatchUp et double-cliquer sur index.html.
+
+Cette méthode est la plus simple pour commencer, mais Live Server ou Python est préférable pour les tests.
+
+10. MODIFIER LE SITE
+
+Modifier un titre :
+- ouvrez index.html
+- recherchez le texte
+- remplacez-le
+- Ctrl + S
+- actualisez le navigateur
+
+Modifier une couleur :
+- ouvrez style.css
+- recherchez la couleur
+- modifiez-la
+- Ctrl + S
+- actualisez le navigateur
+
+Modifier une image :
+- remplacez l'image dans MatchUp\images\
+- gardez exactement le même nom
+- actualisez le navigateur
+
+Modifier une interaction :
+- ouvrez script.js
+
+11. SI UNE IMAGE NE S'AFFICHE PAS
+
+Vérifiez :
+- que l'image est bien dans MatchUp\images\
+- que le nom est exactement le même
+- que l'extension est correcte
+- qu'il n'y a pas d'espace supplémentaire dans le nom
+
+12. INFORMATIONS A COMPLETER
+
+Les coordonnées fournies pour Match Up sont intégrées dans la page Contact et dans les pieds de page.
+Avant une publication finale, ajoutez :
+- téléphone
+- email
+- adresse
+- horaires
+- liens vers les réseaux sociaux
+- numéro WhatsApp, si vous souhaitez l'afficher
+- conditions commerciales : abonnement de 5 DT/mois
+
+Le formulaire de contact est volontairement une démonstration locale.
+Il n'envoie pas réellement de message car le projet ne possède pas de backend ni de base de données.
+
+
+COORDONNÉES AJOUTÉES
+Téléphone : 55 996 677
+Email : career conncet@gmail.com
+Adresse : ISG Sousse
+Horaires : 24h/7j
+Réseaux sociaux : téléphone et social media
+WhatsApp : 55 996 677
+Prix / conditions commerciales : 5 DT/mois

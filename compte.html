@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mon compte Match Up.">
+  <title>Match Up | Mon compte</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Match Up - Accueil">
+        <span class="brand-mark">M</span>
+        <span class="brand-text">Match <strong>Up</strong></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+      <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="produits.html">Services</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">connexion</a>
+        <a href="compte.html">mon compte</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container narrow-content">
+        <div class="form-card">
+          <p class="eyebrow">MON COMPTE</p>
+          <div id="accountInfo">Chargement...</div>
+          <button class="btn btn-secondary" id="logoutBtn" type="button">Déconnexion</button>
+        </div>
+
+        <div class="form-card" style="margin-top:22px">
+          <p class="eyebrow">ABONNEMENT</p>
+          <p>Abonnement mensuel : 5 DT/mois. Cette demande est une démonstration : aucun paiement n'est effectué.</p>
+          <div id="subList"></div>
+          <button class="btn btn-primary" id="subscribeBtn" type="button">Demander l'abonnement</button>
+          <p class="form-message" id="accountMessage" aria-live="polite"></p>
+        </div>
+
+        <div class="form-card" id="adminBox" style="margin-top:22px" hidden>
+          <p class="eyebrow">ADMIN</p>
+          <h2>Messages de contact</h2>
+          <div id="adminMessages">Chargement...</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-bottom">© <span id="currentYear"></span> Match Up. Tous droits réservés.</div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config.js"></script>
+  <script src="supabase-client.js"></script>
+  <script src="compte.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
